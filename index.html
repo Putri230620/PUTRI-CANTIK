@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--judul-->
+        <p>mini project by : Putri Fadhilla
+        </p><br>
+            <h1><center>Konversi Suhu</center></h1> <br>
+        <div class="kotakketerangan">
+            <p>Suhu adalah sebuah ukuran yang mengindikasikan sejauh mana 
+            sebuah objek atau lingkungan bisa memberikan energi termal 
+            kepada objek lainnya. 
+            Dalam fisika, suhu diukur dalam satuan derajat, 
+            seperti Celsius (°C), Fahrenheit (°F), atau Kelvin (K). 
+            Konsep suhu didasarkan pada ide bahwa materi terdiri dari 
+            partikel-partikel yang bergerak, dan semakin cepat 
+            partikel-partikel tersebut bergerak, semakin tinggi suhu 
+            objek tersebut.</p>
+            <p>Suhu juga dapat dijelaskan sebagai perbandingan 
+                antara panas dan dingin. Ketika suatu objek memiliki
+                suhu yang lebih tinggi, artinya objek tersebut 
+                memiliki energi termal yang lebih tinggi dan dapat 
+                mentransfer energi termal kepada objek dengan suhu 
+                yang lebih rendah. Konsep ini dikenal sebagai hukum 
+                perpindahan panas kedua, yang menyatakan bahwa panas 
+                akan mengalir dari benda dengan suhu yang lebih tinggi
+                ke benda dengan suhu yang lebih rendah sampai keduanya
+                mencapai kesetimbangan termal. Suhu juga merupakan 
+                salah satu faktor yang mempengaruhi keadaan fisik 
+                suatu zat. Misalnya, pada suhu rendah, air akan 
+                membeku menjadi es, sedangkan pada suhu yang lebih 
+                tinggi, air akan berubah menjadi bentuk cair dan 
+                akhirnya menjadi uap saat suhu semakin meningkat.
+                <p>
+                Penting untuk dicatat bahwa konsep suhu memiliki 
+                arti yang relatif dan dapat dinyatakan dalam berbagai 
+                skala pengukuran tergantung pada sistem yang digunakan.</p>
+                </p><br>
+            </div>
+
+        <!--cotainer1-->
+        <div class="kotak1">
+                <p>Masukkan suhu derajat Celcius(&degC) kedalam kotak dibawah ini, lalu 
+                    klik tombol konversi untuk mendapatkan hasil konversi  </p>
+                    <p></p>
+                <!--BAGIAN KONVERSI 1 FORM-->
+                    <form id="konversi">
+                        <div class="label-container">
+                        <label class="label" for="C">Suhu celcius : </label>
+                        <input type="text" id="C" name="Suhu Celcius" required>
+                        <button type="button" onclick="konversi()">konversi suhu</button> 
+                        </div>
+                    <!--tampilan dalam tabel-->
+                        <table>
+                        <!--FARENHAIT-->
+                        <tr>
+                            <th>Hasil Konversi ke Farenhait</th>
+                            <td>
+                                <label for="F"></label>
+                                <input type="text" id="F" readonly>
+                            </td>
+                            <td>
+                                <label for="FF">
+                                <input type="text" id="FF" readonly>
+                                </label>
+                            </td>
+                        </tr>
+                        <!--REAMUR-->
+                        <tr>
+                            <th>Hasil Konversi ke Reamur</th>
+                            <td>
+                                <label for="R"></label>
+                                <input type="text" id="R" readonly>
+                            </td>
+                            <td>
+                                <label for="RR">
+                                <input type="text" id="RR" readonly>
+                                </label>
+                            </td>
+                        </tr>
+                        <!--KELVIN-->
+                        <tr>
+                            <th>Hasil Konversi ke Kelvin </th>
+                            <td>
+                                <label for="K"></label>
+                                <input type="text" id="K" readonly>
+                            </td>
+                            <td>
+                            <label for="KK">
+                                <input type="text" id="KK" readonly>
+                            </label>
+                            </td>
+                        </tr>
+                        </table>
+                    <!--Tombol hapus-->
+                        <button type="button" onclick="reset()">Hapus</button>
+                    </form>
+                    <!--manggil file sebelah-->
+                <script src="script.js"></script>
+         </div>
+        <!--container kedua-->
+        <div class="container2">
+            <div class="kiri2">
+                <h3> CARA KONVERSI SUHU CELCIUS KE FARENHAIT</h3>
+                <P>Suhu S dalam derajat farenhait (&deg F) sama dengan suhu S dalam derajat celcius 
+                    kali 9/5 tambah 32</p>
+                <P>
+                    <math>
+                        <msub>
+                            <mi>S</mi>
+                            <mi>(&deg F)</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mo>(</mo>
+                        <msub>
+                            <mi>S</mi>
+                            <mi>(&deg C)</mi>
+                            </msub>
+                        <mo>x</mo>
+                        <mfrac>
+                            <mo>9</mo>
+                            <mo>5</mo>
+                        </mfrac>
+                        <mo>)</mo>
+                        <mo>+</mo>
+                        <mo>32</mo>
+                    </math>
+                    </P>
+                    <p>
+                    atau
+                    </p>
+                    <p>
+                    <math>
+                        <msub>
+                            <mi>S</mi>
+                            <mi>(&deg F)</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mo>(</mo>
+                        <msub>
+                            <mi>S</mi>
+                            <mi>(&deg C)</mi>
+                            </msub>
+                        <mo>x</mo>
+                        <mo>1.8</mo>
+                        <mo>)</mo>
+                        <mo>+</mo>
+                        <mo>32</mo> 
+                    </math>
+                </P>
+            </div>
+            <div class="kanan2">
+            </div>
+        </div>
+        <!--container 3-->
+        <div class="ctn3">
+            <div class="kanan3">
+                <h3>CARA KONVERSI SUHU CELCIUS KE REAMUR</h3>
+                <p>Suhu S dalam derajat reamur (&deg R) sama dengan suhu S dalam derajat celcius
+                    dikali 4/5</p>
+                    <p>
+                        <math>
+                            <msub>
+                                <mi>S</mi>
+                                <mi>(&deg R)</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>S</mi>
+                                <mi>(&deg C)</mi>
+                            </msub>
+                            <mo>x</mo>
+                            <mfrac>
+                                <mo>4</mo>
+                                <mo>5</mo>
+                            </mfrac>
+                        </math>
+                    </p>
+                    <p>atau</p>
+                    <p>
+                        <math>
+                            <msub>
+                                <mi>S</mi>
+                                <mi>(&deg R)</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>S</mi>
+                                <mi>(&deg C)</mi>
+                            </msub>
+                            <mo>x</mo>
+                            <mfrac>
+                                <mo>4</mo>
+                                <mo>5</mo>
+                            </mfrac> 
+                        </math>
+                    </p>
+                </div>
+            <div class="kiri3"></div>
+        </div>
+    <!--container keempat-->
+    <div class="ctn4">
+        <div class="kiri4">
+            <h3>CARA KONVERSI SUHU CELCIUS KE KELVIN</h3>
+            <p>Suhu S dalam derajat kelvin (&deg K) sama dengan suhu S dalam derajat celcius
+                + 273.15</p>
+            <p>
+                <math>
+                    <msub>
+                        <mi>S</mi>
+                        <mi>(&deg K)</mi>
+                    </msub>
+                    <mi>=</mi>
+                    <msub>
+                        <mi>S</mi>
+                        <mi>(&degC)</mi>
+                    </msub>
+                    <mo>+</mo>
+                    <mo>273.15</mo>
+                </math>
+            </p>
+        </div>
+        <div class="kanan4">
+        </div>
+    </div>
+    </body>
+</html>
